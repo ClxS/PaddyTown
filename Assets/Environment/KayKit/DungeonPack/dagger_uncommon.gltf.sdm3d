@@ -1,0 +1,24 @@
+!Model
+Id: cf8f58fd-a2da-4b4b-b123-f8efbdde56e0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/dagger_uncommon.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    8a54c0b0a5bb64e7bec84ca7986f8e65:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    f9f760691ff6e8861e289d8cc546b2e2:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    9be49556fa690275dd32e4b7eb1c75c2:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? 1a581aae1d6c05a1494a628922a7789b~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/dagger_uncommon.gltf.glb
+    : ba693bd3a8b477a717b33559a655a966

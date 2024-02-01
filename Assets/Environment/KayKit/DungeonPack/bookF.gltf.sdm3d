@@ -1,0 +1,19 @@
+!Model
+Id: 7fe45391-e977-4987-b640-8f3f155c97b6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookF.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ffff501bfdc708e031fb68f109dbd51e:
+        Name: BlueDark
+        MaterialInstance:
+            Material: 069a4bd6-1890-43c5-871d-941b650c7257:Environment/KayKit/DungeonPack/BlueDark
+    b8ad687e148ba745c6e86663b4fd28c0:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+Modifiers: {}
+~SourceHashes:
+    12fde4e393c54a607c4c34f9be6641b1~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookF.gltf.glb: 8563d6e4f9c7b10ef29282f746ef0d69

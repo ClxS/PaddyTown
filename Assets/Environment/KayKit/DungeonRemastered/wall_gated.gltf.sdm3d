@@ -1,0 +1,21 @@
+!Model
+Id: 7e5f6f0b-fbb5-4fc4-b2ed-3efbefdaa10b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_gated.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    23e9f55c487fcca6c170777b10a1f357:
+        Name: texture
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+    1a676ec4f918e82dc9ab8709022c3198:
+        Name: Material
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    ? 5cf5482ead179e556adc763a37572706~../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_gated.gltf.glb
+    : 1a827a91303ab0f48bccf65ee48df71f

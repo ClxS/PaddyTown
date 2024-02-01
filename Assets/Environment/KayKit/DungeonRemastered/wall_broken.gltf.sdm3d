@@ -1,0 +1,21 @@
+!Model
+Id: a192c23e-a3b8-4416-83d3-0c9fe1989ec5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_broken.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    13335f61722e6891006c9cd3da4acf64:
+        Name: texture
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+    6100f020640831f20c3af582cf8491aa:
+        Name: Material
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    ? 09ad15c0e30a708a6332bf696a1142ae~../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_broken.gltf.glb
+    : 483102fe76d5b07f8c49d9cfd27d0ee8

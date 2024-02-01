@@ -1,0 +1,21 @@
+!Model
+Id: 2af5ead1-823b-48fe-8d93-650058450c0c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_scaffold.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    1d0e6c3400754ac59fc192249b4ff43c:
+        Name: texture
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+    58e1adf89c4a8b55987b8203797c8f04:
+        Name: Material
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    ? 9a9e6b1c3630433e188494e28536cf4f~../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_scaffold.gltf.glb
+    : be48d22075d84aaae69b4718ee3bc09e

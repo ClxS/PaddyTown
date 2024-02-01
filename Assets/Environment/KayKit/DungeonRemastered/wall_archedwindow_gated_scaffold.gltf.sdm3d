@@ -1,0 +1,21 @@
+!Model
+Id: f614b804-3f2a-4a34-8885-d1d0c0b783ee
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_archedwindow_gated_scaffold.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    04e24844383b231f3ed440b18feefafa:
+        Name: texture
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+    c77312b6ed41199f712ae01e71f11073:
+        Name: Material
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    ? b7a147027c751814fb019b21ca026e06~../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_archedwindow_gated_scaffold.gltf.glb
+    : e2714292374e097a05d0445b7e0c2147

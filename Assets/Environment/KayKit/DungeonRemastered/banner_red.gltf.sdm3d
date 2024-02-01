@@ -1,0 +1,21 @@
+!Model
+Id: 6c3f2777-eedc-4a25-929b-6d5fda03bf92
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/banner_red.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    6970a97a980a34e157db820634bba45c:
+        Name: texture
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+    040b9ea3b2dac124d444be2937b5c836:
+        Name: Material
+        MaterialInstance:
+            Material: 8063ab85-cd4c-45e4-823b-59a1ff69bafd:Materials/KayKitDungeon
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    ? 33ac41989000d05a400db2ab5d6bd695~../../../../../../../Pictures/Assets/Kaykit/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/banner_red.gltf.glb
+    : d30c043ef1d3f97f6a3f9405ab5c142b

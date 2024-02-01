@@ -1,0 +1,16 @@
+!Model
+Id: 008a93cb-d7c9-42b6-a816-9baf6d69ca23
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../Pictures/Assets/Kaykit/KayKit_Adventurers_1.0_FREE/KayKit_Adventurers_1.0_FREE/Characters/fbx/Barbarian.fbx
+Skeleton: ca178ea7-de0d-4419-9e71-de675eb12e25:Characters/Barbarian/Barbarian Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e573f82a39726a0763c584be511dffc0:
+        Name: barbarian_texture
+        MaterialInstance:
+            Material: fe9bb0fc-6213-40ba-b1a1-126b700cf771:Characters/Barbarian/BarbarianMaterial
+Modifiers: {}
+~SourceHashes:
+    ? a327c5c8f55cba51a8fc4f0dacca7b6e~../../../../../../Pictures/Assets/Kaykit/KayKit_Adventurers_1.0_FREE/KayKit_Adventurers_1.0_FREE/Characters/fbx/Barbarian.fbx
+    : 20fb1bfe29ebb73a4797b8e9a0915973

@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 6847f4a0-5ddf-43b5-8a47-b5bb2a4361d0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    7a8b573bfbefbfbc120d72e6058652f1:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png
+        Name: Tiles
+        TextureRegion: {X: 0, Y: 0, Width: 400, Height: 400}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

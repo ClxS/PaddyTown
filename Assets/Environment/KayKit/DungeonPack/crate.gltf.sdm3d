@@ -1,0 +1,19 @@
+!Model
+Id: 3f13730b-a625-4bea-be7e-f980605b4caf
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crate.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c5bec8f6cd8d2a31239c028596b52686:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    fa68cde337bb4b5ac2c845725dc17839:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+Modifiers: {}
+~SourceHashes:
+    c7766c7712aa66da07bcf91021f524a4~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crate.gltf.glb: b9336eb63ce4992cd035445f21954165

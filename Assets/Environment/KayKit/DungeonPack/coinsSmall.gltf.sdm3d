@@ -1,0 +1,16 @@
+!Model
+Id: fcab8238-964f-4478-8997-01e589c5bcaa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/coinsSmall.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f4c90ac3cf22468d8e7d07ea772cf3d1:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+Modifiers: {}
+~SourceHashes:
+    ? 83b2db72efe15634ae0b72e02f8eb813~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/coinsSmall.gltf.glb
+    : 59421b258dcb7dece5d7c9cb8be9f156

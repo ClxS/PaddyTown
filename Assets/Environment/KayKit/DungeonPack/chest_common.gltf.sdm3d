@@ -1,0 +1,28 @@
+!Model
+Id: 8ed943d2-47cb-43a2-a616-9072c17301de
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chest_common.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    06576bf4cf6c77c1f0ff5e78527d2da7:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    e68c7d1f0ff199d65360483bed324667:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    ec90c497fc07ce9a8861b960785f70c9:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+    dade7547e0e50be18a5550ae0b8883c2:
+        Name: Red
+        MaterialInstance:
+            Material: 825accc2-8277-4b1f-a84a-702fc6e998dc:Environment/KayKit/DungeonPack/Red
+Modifiers: {}
+~SourceHashes:
+    ? f818f9aed5bf7dcb618000f1f8460e1b~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chest_common.gltf.glb
+    : a71c8494033f9ee6b8dbf36ad4dc6267

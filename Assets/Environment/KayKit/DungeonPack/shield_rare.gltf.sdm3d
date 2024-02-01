@@ -1,0 +1,24 @@
+!Model
+Id: 6801be2e-7cf4-430d-97f2-1c6adde489b2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/shield_rare.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    40c6ecd47b02388ffe17a4a22c7cd57e:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+    33d360b3c018ae7bf4a4b486ea064ca6:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    14bcddbff3dbfebdd11946b9ff916c10:
+        Name: Red
+        MaterialInstance:
+            Material: 825accc2-8277-4b1f-a84a-702fc6e998dc:Environment/KayKit/DungeonPack/Red
+Modifiers: {}
+~SourceHashes:
+    ? 8332a205128b2bc080f6b9da450cbad7~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/shield_rare.gltf.glb
+    : f9bd6e704e5396ed6b160755614c13a2

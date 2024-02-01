@@ -1,0 +1,24 @@
+!Model
+Id: eb2d69c6-2187-4a87-9d76-ea75580ab6bf
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/shield_common.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    3adae94d7d7f8338a56f54770f96f9e6:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    1c346742db342bba6203a5ae01d7c08a:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    78261dfc91bb31e7e73f6532519e7e78:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+Modifiers: {}
+~SourceHashes:
+    ? aa0eba0909cd9a02f8b6f19cba618579~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/shield_common.gltf.glb
+    : 278b9a6fbbd3c2d15485a6aeb444a1e6

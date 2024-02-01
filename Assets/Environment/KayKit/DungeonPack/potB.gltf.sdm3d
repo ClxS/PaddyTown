@@ -1,0 +1,15 @@
+!Model
+Id: b10a4b7c-2409-4866-b4e2-bd81509a7882
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/potB.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b6fe0db5336efaf5c940ac11beede1f6:
+        Name: Beige
+        MaterialInstance:
+            Material: 93784b21-57aa-41ff-9d73-fa0a07bbfa37:Environment/KayKit/DungeonPack/Beige
+Modifiers: {}
+~SourceHashes:
+    02fa0e8e440c136a6de36d3d614057d0~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/potB.gltf.glb: e1a1709b8ee575a13f5947e225651128

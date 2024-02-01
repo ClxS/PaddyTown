@@ -1,0 +1,24 @@
+!Model
+Id: 2949b585-e3cd-4a60-b7fc-10a9f9c6d211
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/tileSpikes_shallow.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    2f3c185bb502bb81236f0d8bbe1065f4:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    fbc771352088f1a3e2c7be5e318fd9a4:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    98e172bf0906366902598246131705c0:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+Modifiers: {}
+~SourceHashes:
+    ? db241669bb0108c07a2b1a5b87d5c138~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/tileSpikes_shallow.gltf.glb
+    : af15f88952895dc4117e9f6a4ad2c863

@@ -1,0 +1,20 @@
+!Model
+Id: 7557c173-1682-4db4-87d8-421fd8e11861
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/lootSackA.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ec9f3aa34ee97575347ef57bb9569f76:
+        Name: Beige
+        MaterialInstance:
+            Material: 93784b21-57aa-41ff-9d73-fa0a07bbfa37:Environment/KayKit/DungeonPack/Beige
+    883cea152b2f2d0daac685f4337b0100:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+Modifiers: {}
+~SourceHashes:
+    ? 695fc65af4fbad27533003273faebb70~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/lootSackA.gltf.glb
+    : ed6bab7a6fcf5efc35abcaa940fea52b

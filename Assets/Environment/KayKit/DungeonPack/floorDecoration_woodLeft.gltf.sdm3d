@@ -1,0 +1,16 @@
+!Model
+Id: cc4e1ac9-97aa-4def-b72f-bfc808822f73
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/floorDecoration_woodLeft.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    1159d2c2d2897a4c75eab67c69015df7:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+Modifiers: {}
+~SourceHashes:
+    ? 326d8f2c039ec776b124e04db3482da2~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/floorDecoration_woodLeft.gltf.glb
+    : 7dec2ca2afe5b0773513475ff45f25d8

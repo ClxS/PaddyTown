@@ -1,0 +1,20 @@
+!Model
+Id: fb4d5342-d2f1-465c-8c8a-e4248250e490
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/wall_broken.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    9b585b0d65e76033195f143951d06d54:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    e9be1b1eb55dcb9303613c6ad0d1006d:
+        Name: StoneDark
+        MaterialInstance:
+            Material: 39fafd4c-74da-4ce4-b4de-08ae7292ee26:Environment/KayKit/DungeonPack/StoneDark
+Modifiers: {}
+~SourceHashes:
+    ? 1e93c0e8f4d05812050679804b0e555a~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/wall_broken.gltf.glb
+    : ef01c8caec8ba4c07e2b987ee3b6248b

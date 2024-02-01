@@ -1,0 +1,24 @@
+!Model
+Id: 3335eaa4-94f7-481c-919c-97e7791de679
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/axe_uncommon.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    99b8fc61df8969a88a66f779c3594656:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    10149da8bf1374039c6e92d9a45e2f9d:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    3e7e3e7b25c716199c39842d91d8d4f1:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? e732a43c7a146853941ef31b8c77ae67~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/axe_uncommon.gltf.glb
+    : 1487cf664ed06af9af2dbeacbcfa5767

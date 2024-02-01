@@ -1,0 +1,24 @@
+!Model
+Id: dc58c50a-6b4a-434e-b21c-b8339aa11656
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/wallSingle_windowGate.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    16c4b30958f7c3ab4eec5c0df2646ea8:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    1d19dcd46392df1a5605f9265c7e5c47:
+        Name: StoneDark
+        MaterialInstance:
+            Material: 39fafd4c-74da-4ce4-b4de-08ae7292ee26:Environment/KayKit/DungeonPack/StoneDark
+    60db9336a00087a219e9e162d0fa1db9:
+        Name: Black
+        MaterialInstance:
+            Material: 76cb3b51-1d3f-45b2-ac32-033fba513a3c:Environment/KayKit/DungeonPack/Black
+Modifiers: {}
+~SourceHashes:
+    ? 1fe8c5b129a2745ae1607e0e1b0f8ebf~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/wallSingle_windowGate.gltf.glb
+    : 4736e51e06eac62be33c5117e4ce3ad8

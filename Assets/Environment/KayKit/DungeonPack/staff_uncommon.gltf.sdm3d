@@ -1,0 +1,20 @@
+!Model
+Id: f1ad21d0-e8aa-4c3c-80dd-d2f5ae2ceca6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/staff_uncommon.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ccfdd15c867d45518727a7e5c547c6bd:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    874b4c953acacdcb949c04bd2b57ee49:
+        Name: Purple
+        MaterialInstance:
+            Material: 5bfa65da-db89-45a7-a3ea-5d69f40d96a4:Environment/KayKit/DungeonPack/Purple
+Modifiers: {}
+~SourceHashes:
+    ? 2106acd29664f8336174e83b028fee5c~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/staff_uncommon.gltf.glb
+    : 1f437209553c564889d8b7620c37ff4f

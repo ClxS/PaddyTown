@@ -1,0 +1,20 @@
+!Model
+Id: 17b042d3-8aa7-4d5d-b5bc-51a063b92fae
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crossbow_common.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    d4972021ba0c2e7248d471e0fb303195:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    fddcedc00a1c0cc5afc8a7592e089da7:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? 0950ce3e9f6af4fe607514bbdb68f8d4~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crossbow_common.gltf.glb
+    : b80497c8e9ade2aaa0702b52d2239782

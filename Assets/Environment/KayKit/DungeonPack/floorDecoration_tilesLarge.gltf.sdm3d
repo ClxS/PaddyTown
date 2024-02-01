@@ -1,0 +1,16 @@
+!Model
+Id: 57f1a714-d112-4d4c-9e99-deb22b75a53f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/floorDecoration_tilesLarge.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    82ff2e862dce4ac12d9777efe1d15faf:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? 9c81412611b9979b11e75880b8ded289~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/floorDecoration_tilesLarge.gltf.glb
+    : 6861045787a253da77941a38afd21e44

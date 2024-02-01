@@ -1,0 +1,24 @@
+!Model
+Id: 782c4656-ec2a-40ab-a862-b1f72eec26af
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/hammer_rare.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    912a0a0a1ad13162688396bef8cb7a9c:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    9c1c19ca8649b1bbc6586d3b29ca575b:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+    cb026373314638c9cc5f2e4cf9383cc7:
+        Name: Red
+        MaterialInstance:
+            Material: 825accc2-8277-4b1f-a84a-702fc6e998dc:Environment/KayKit/DungeonPack/Red
+Modifiers: {}
+~SourceHashes:
+    ? 8730dfe325d92d20a43d16b7ed9861b0~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/hammer_rare.gltf.glb
+    : ae4c685c4edb866919da447376674cf6

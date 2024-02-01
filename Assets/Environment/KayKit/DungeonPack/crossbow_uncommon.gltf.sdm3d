@@ -1,0 +1,20 @@
+!Model
+Id: ded4ae7e-6bb7-4a4a-a176-12fe5fc6109f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crossbow_uncommon.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ca25b970963715ff8e4954800cc10239:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    86cb70a2d11705c831ffea42efa4992b:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+Modifiers: {}
+~SourceHashes:
+    ? 973bc739babf6bee5b2279c5b28a60eb~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crossbow_uncommon.gltf.glb
+    : 59d892e8069892019aee07ec51d98fe1

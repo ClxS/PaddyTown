@@ -1,0 +1,50 @@
+!SpriteSheet
+Id: 91eca96c-e042-4117-8ecf-d14fd6b9cf1f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    aeb8be724e962df489285d217ff91722:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 21, Y: 35, Width: 24, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    076e427ea730c48a0b8730199ac52611:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 88, Y: 33, Width: 17, Height: 31}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    667b5bae024ce64b7a0d96ec0cc5ac05:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 151, Y: 34, Width: 18, Height: 30}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    e8f5f02f5fe96c1db49b59de85cb176d:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 213, Y: 35, Width: 24, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    d08a48c6c88058cd13aa4b5822eebd0a:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 280, Y: 33, Width: 17, Height: 31}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    a183a69ffd81d8c54d89ef8f787355bc:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 343, Y: 34, Width: 18, Height: 30}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

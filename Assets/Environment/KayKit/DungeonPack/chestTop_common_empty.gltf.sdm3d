@@ -1,0 +1,20 @@
+!Model
+Id: 5c4fa50a-aaf7-412e-a3f2-6db52d3e8093
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chestTop_common_empty.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    08ee25c6217518337e036766c56f6fde:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    322e57fd0d65839dcc939c0245b96f1d:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+Modifiers: {}
+~SourceHashes:
+    ? f70be8cbe0f24fd60dd0a0a262add1a2~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chestTop_common_empty.gltf.glb
+    : d1b24e6755082c572dd6495564c4b8c0

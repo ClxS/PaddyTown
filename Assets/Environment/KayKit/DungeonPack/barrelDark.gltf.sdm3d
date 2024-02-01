@@ -1,0 +1,24 @@
+!Model
+Id: 97910f43-6f41-484c-975a-05363ba90744
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/barrelDark.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b2acaec61f640cb63c8dc61a4cec5f2e:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    82c007e9c4ae39b9ef9311d448b53b75:
+        Name: Beige
+        MaterialInstance:
+            Material: 93784b21-57aa-41ff-9d73-fa0a07bbfa37:Environment/KayKit/DungeonPack/Beige
+    43a5b14d95b535e70e1dec0ae2f305a1:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? dedb6410a53e311a825baa516bedf686~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/barrelDark.gltf.glb
+    : 24ba504767fec6cb6b85d15d955e51ba

@@ -1,0 +1,20 @@
+!Model
+Id: 51797f73-fce8-4710-87b0-ee92d65ffecb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/artifact.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0b7972f0bea726cb07cf4d4524207efa:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+    3c16ea8bb5ce25f71e2315f397a0b776:
+        Name: Red
+        MaterialInstance:
+            Material: 825accc2-8277-4b1f-a84a-702fc6e998dc:Environment/KayKit/DungeonPack/Red
+Modifiers: {}
+~SourceHashes:
+    ? 35e53308ea9b9e6f5d6f30da346faa87~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/artifact.gltf.glb
+    : 4f0849b2a10811ee9eed2ef2da46f960

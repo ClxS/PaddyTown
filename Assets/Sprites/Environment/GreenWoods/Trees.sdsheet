@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 33ae6cc6-b08b-4d4b-9044-784e3eed0c85
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    b86b54185ff991f985608ddf9632946a:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png
+        Name: Trees
+        TextureRegion: {X: 0, Y: 0, Width: 240, Height: 352}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

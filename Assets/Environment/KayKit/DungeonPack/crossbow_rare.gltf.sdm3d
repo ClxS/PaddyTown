@@ -1,0 +1,20 @@
+!Model
+Id: 4c7c36a3-ea7b-4239-95c6-3c89cde19a14
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crossbow_rare.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    6d8a53a58008266d8a77e5439a87b860:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    6ec0f9217a4aed25bbae5955c911aabb:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+Modifiers: {}
+~SourceHashes:
+    ? 1d2d7596c99c79da7074ddbc628b6a5d~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/crossbow_rare.gltf.glb
+    : bb07d70c554a82a161a96e8394d8623b

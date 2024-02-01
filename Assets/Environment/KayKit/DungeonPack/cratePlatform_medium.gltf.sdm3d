@@ -1,0 +1,20 @@
+!Model
+Id: e44df57a-940f-4e57-907a-cddb8e90f9cd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/cratePlatform_medium.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    fc68ecaf341f2a4b7f9144caa9d569fc:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    cff5befded85beae791bd97abc74f52d:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? 7b6489e9b8b3d2784f5c149ea60939e8~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/cratePlatform_medium.gltf.glb
+    : 2fdc19fa858963b56b4d71429a7744d7

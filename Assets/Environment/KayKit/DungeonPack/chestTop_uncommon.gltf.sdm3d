@@ -1,0 +1,20 @@
+!Model
+Id: cd10a108-cc6c-401d-9712-73c39c857c52
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chestTop_uncommon.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    34338ddc105e41932fbaf05c58647de6:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    ce3dbebc3097235829e5fcec7915ed6e:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+Modifiers: {}
+~SourceHashes:
+    ? 530f992e241d01049ce6b6427077c240~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chestTop_uncommon.gltf.glb
+    : e51697467b50b3ec3e7c4d39507a7b6b

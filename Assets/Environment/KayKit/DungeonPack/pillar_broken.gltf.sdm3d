@@ -1,0 +1,20 @@
+!Model
+Id: fc4beeda-7fa4-403d-a28f-900c0ac9e69b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/pillar_broken.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ff649ebd986040dd45642c5751587743:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    7b370b4aba69254b3d24cc48d22daa71:
+        Name: StoneDark
+        MaterialInstance:
+            Material: 39fafd4c-74da-4ce4-b4de-08ae7292ee26:Environment/KayKit/DungeonPack/StoneDark
+Modifiers: {}
+~SourceHashes:
+    ? e81de0dd6c7090e605f81a5215b0e8c6~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/pillar_broken.gltf.glb
+    : 25e84c385592aab1cc052f4c6d12ce0a

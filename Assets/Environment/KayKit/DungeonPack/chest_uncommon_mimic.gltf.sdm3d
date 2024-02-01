@@ -1,0 +1,28 @@
+!Model
+Id: 0723e3d7-b549-4e64-b3b9-b5a6eee19459
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chest_uncommon_mimic.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f57bf0c185d0f1a44345b160811d6edb:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    eee794dcd0e1fd25f950e9f8b122fc36:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    dedd9a070d4c6eaf24ad28a994e28f7e:
+        Name: Black
+        MaterialInstance:
+            Material: 76cb3b51-1d3f-45b2-ac32-033fba513a3c:Environment/KayKit/DungeonPack/Black
+    d1c79648d8bbe0c221ee3cc19af441e5:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+Modifiers: {}
+~SourceHashes:
+    ? c2c348d2063d4de376ec519ecc1ab9b8~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chest_uncommon_mimic.gltf.glb
+    : f80a931dd42ed67efe0cacf6e67e3f7f

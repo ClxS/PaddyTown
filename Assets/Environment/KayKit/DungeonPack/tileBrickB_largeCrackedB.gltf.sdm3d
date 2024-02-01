@@ -1,0 +1,24 @@
+!Model
+Id: b71e39a7-36ea-446c-9f33-d640f613f66f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/tileBrickB_largeCrackedB.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0c1a575273a635afcbd8aee912a3ed5d:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    d9fbd42b9723c9eedd6a19300f5ff073:
+        Name: Mud
+        MaterialInstance:
+            Material: ad6cb7b7-e73c-4f56-8c79-0a8212462e93:Environment/KayKit/DungeonPack/Mud_4
+    9f8ed622a13dfcc6df2c7e3362adc236:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+Modifiers: {}
+~SourceHashes:
+    ? 120c4da5daf7be4851e3c02cbcbe34d7~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/tileBrickB_largeCrackedB.gltf.glb
+    : 7cfc61652807bbd1bccc5bf9318daa32

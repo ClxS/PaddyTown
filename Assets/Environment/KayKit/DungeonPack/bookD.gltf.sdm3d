@@ -1,0 +1,19 @@
+!Model
+Id: b09f0118-4cf4-4d45-af7f-0ebf8759381d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookD.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    8a6c89ba37b1fd49dfebc9f7f7d354f3:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    788f8e6851e4ae624a93565db8c93624:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+Modifiers: {}
+~SourceHashes:
+    3e867e4505daafba781415e796f5f690~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookD.gltf.glb: f29fbe0edb9807df5d4682694eda0417

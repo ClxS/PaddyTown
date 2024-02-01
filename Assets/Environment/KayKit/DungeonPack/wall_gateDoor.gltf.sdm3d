@@ -1,0 +1,24 @@
+!Model
+Id: ba4f172d-2b66-4a4a-b320-cbb1ae5be8f0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/wall_gateDoor.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    217a0f7056be8ad1cc31d32d00042e44:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+    68df92abc1fd4a66ded662688d305642:
+        Name: StoneDark
+        MaterialInstance:
+            Material: 39fafd4c-74da-4ce4-b4de-08ae7292ee26:Environment/KayKit/DungeonPack/StoneDark
+    bdf226862a634be6159af98475526f18:
+        Name: Black
+        MaterialInstance:
+            Material: 76cb3b51-1d3f-45b2-ac32-033fba513a3c:Environment/KayKit/DungeonPack/Black
+Modifiers: {}
+~SourceHashes:
+    ? 799264a11f5833d95e228c2da4dec76b~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/wall_gateDoor.gltf.glb
+    : 1250537866828e3805007f85d8d5a3f5

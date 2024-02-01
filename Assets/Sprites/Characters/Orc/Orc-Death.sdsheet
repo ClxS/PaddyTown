@@ -1,0 +1,50 @@
+!SpriteSheet
+Id: a5fbdff2-1478-4fde-afec-674d34455376
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    d8bb758025a296cc1a43123b43a18404:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 22, Y: 42, Width: 19, Height: 22}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    4f29ed4651c80b2f1dc4fa16d4508e08:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 82, Y: 28, Width: 23, Height: 36}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    3e0f71e1f99ca4a887182658a9cec4b4:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 157, Y: 39, Width: 24, Height: 25}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    02e613547a4bf1badf7cd139c5a9a83a:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 215, Y: 49, Width: 31, Height: 15}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    1a7fe3003ee76b74a06b86f3396e6d67:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 278, Y: 52, Width: 33, Height: 12}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    b4a5eb04dd6e1b68f342c77c01be9985:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 342, Y: 48, Width: 34, Height: 16}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

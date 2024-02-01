@@ -1,0 +1,50 @@
+!SpriteSheet
+Id: 38598f06-ab35-4e49-ae0a-3b82b9b652b6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    006f2c784f2bc3d0cb481a00a919585d:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 21, Y: 34, Width: 24, Height: 30}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    4c54ae4217d1501447b5c197b94b2495:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 86, Y: 32, Width: 19, Height: 32}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    9a39e03b2f7fde864b7ad755105d6a9d:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 150, Y: 33, Width: 19, Height: 31}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    cf9f827aa99463d6d8e9daa6a87789c5:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 213, Y: 34, Width: 23, Height: 30}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    7f6d19e4cd42aa27f1ae2c5811d16f36:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 278, Y: 32, Width: 19, Height: 32}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    afc468ee86c11e39cfcb36f877e9c4b7:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/Run-Sheet.png
+        Name: Run-Sheet
+        TextureRegion: {X: 342, Y: 33, Width: 19, Height: 31}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

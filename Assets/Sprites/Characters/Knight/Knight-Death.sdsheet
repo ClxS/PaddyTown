@@ -1,0 +1,50 @@
+!SpriteSheet
+Id: a0ef9754-7264-41a3-8aa3-079c046ac25a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    f4b3ee9c71751b05053b80c9f38b6456:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 5, Y: 3, Width: 19, Height: 29}
+        Center: {X: 0.0, Y: 14.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    2152aa27c02fabc467720630c9d3a648:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 54, Y: 8, Width: 19, Height: 24}
+        Center: {X: 1.0, Y: 12.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    20c5f4c8c93762373467fcf1633fa6fd:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 101, Y: 11, Width: 26, Height: 21}
+        Center: {X: -1.0, Y: 10.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    dc124070eaf4c770ece8ca2708ddc616:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 148, Y: 21, Width: 34, Height: 11}
+        Center: {X: 0.0, Y: 5.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    f8362ba3df7404776f38615c87dd88ce:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 197, Y: 19, Width: 33, Height: 13}
+        Center: {X: 0.0, Y: 6.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    72333c0b5051e8a62cb4fd95da1f94b1:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/Death-Sheet.png
+        Name: Death-Sheet
+        TextureRegion: {X: 245, Y: 19, Width: 33, Height: 13}
+        Center: {X: 0.0, Y: 6.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

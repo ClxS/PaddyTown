@@ -1,0 +1,16 @@
+!Model
+Id: 1c464351-189b-4b98-adc7-e399c01cc1f2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/stairs_wide.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    7db95212483954f3a3457d369e8f8da6:
+        Name: Stone
+        MaterialInstance:
+            Material: 324c6774-7845-4d64-b8a4-a583bd25ce58:Environment/KayKit/DungeonPack/Stone
+Modifiers: {}
+~SourceHashes:
+    ? cd8f595c59673bc11a47dc457c660065~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/stairs_wide.gltf.glb
+    : 8c6e360cbaa859aecfb6da480eac557b

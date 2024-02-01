@@ -1,0 +1,24 @@
+!Model
+Id: 0275fff5-888f-47ec-8612-1796c841a859
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/potionLarge_blue.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c28d0ebeb8f804ef697b5e56f85f532c:
+        Name: Glass
+        MaterialInstance:
+            Material: 7bf7f3aa-3fcd-4690-bc2b-9cc9624e2a9f:Environment/KayKit/DungeonPack/Glass
+    8adcecc2c6cbf1d6e523eab6838b3296:
+        Name: Beige
+        MaterialInstance:
+            Material: 93784b21-57aa-41ff-9d73-fa0a07bbfa37:Environment/KayKit/DungeonPack/Beige
+    0ee5fb2b2bde6dd3243f7f9536ecc183:
+        Name: Blue
+        MaterialInstance:
+            Material: 78d764e1-1b72-45f3-8c49-fcc612da7767:Environment/KayKit/DungeonPack/Blue
+Modifiers: {}
+~SourceHashes:
+    ? a598318502a7b0fe160859bfab326594~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/potionLarge_blue.gltf.glb
+    : 9a5872ccff02265ab58346a5f840ceb4

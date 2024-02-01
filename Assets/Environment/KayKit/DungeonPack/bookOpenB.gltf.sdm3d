@@ -1,0 +1,24 @@
+!Model
+Id: bd366158-4047-46cc-a586-e773175ee325
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookOpenB.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b4148bc2fb8e7b48083749243149f034:
+        Name: Brown
+        MaterialInstance:
+            Material: 4be5751c-b4dd-4e21-ab60-8c8cf6ef9b85:Environment/KayKit/DungeonPack/Brown
+    86c65e1b1addf80769b4576777799afa:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    f116e1e162e0e33f33ea87052aa69379:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+Modifiers: {}
+~SourceHashes:
+    ? 3c0de9edd85738acd163795fcbb919ad~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookOpenB.gltf.glb
+    : 96ab42334ce7f99fabd6558e276de498

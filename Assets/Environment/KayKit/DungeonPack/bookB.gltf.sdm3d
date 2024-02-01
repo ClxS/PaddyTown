@@ -1,0 +1,23 @@
+!Model
+Id: b4418ce6-7bde-4b48-90ce-df4e1b7e84c1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookB.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    afb42934725c71d06fc76763d644f04a:
+        Name: PurpleDark
+        MaterialInstance:
+            Material: 994ef3bf-5dc8-4bd9-a020-adcb878ae1ea:Environment/KayKit/DungeonPack/PurpleDark
+    9cab56f39e5f9956a53e4ec930ef25b0:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    307d9af08aa03472df72126171606c4f:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+Modifiers: {}
+~SourceHashes:
+    56ff995f934d8084e6af883589d93397~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookB.gltf.glb: 4d5de6ee18c290787afb4b855ec3a466

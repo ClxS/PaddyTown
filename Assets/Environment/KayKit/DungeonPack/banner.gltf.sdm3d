@@ -1,0 +1,23 @@
+!Model
+Id: cbe17aff-176c-4d1a-9bf7-896fecb4d4cd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/banner.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e80f588d6a7e8648127ab019c0384ac6:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    4d0f5a93e087f29bdcd77c70ecfe8eb4:
+        Name: BlueDark
+        MaterialInstance:
+            Material: 069a4bd6-1890-43c5-871d-941b650c7257:Environment/KayKit/DungeonPack/BlueDark
+    7ffe9fb41bbe148b0e63b661f82b6347:
+        Name: BlueLight
+        MaterialInstance:
+            Material: d51b8384-0beb-412c-bbbe-018459a1fbe9:Environment/KayKit/DungeonPack/BlueLight
+Modifiers: {}
+~SourceHashes:
+    6f9115f9acc37bc66f00b5c871ce47fb~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/banner.gltf.glb: ac48b49ef19b59b75f5d64849a1bccf7

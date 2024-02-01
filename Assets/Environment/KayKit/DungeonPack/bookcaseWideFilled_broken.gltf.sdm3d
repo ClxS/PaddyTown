@@ -1,0 +1,44 @@
+!Model
+Id: d4eec432-ec9a-4166-8db1-22fde0951b89
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookcaseWideFilled_broken.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    3a92f461479ab6c95133e76723182d3f:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    47972f868aedd0744b5e1bf103014a10:
+        Name: PurpleDark
+        MaterialInstance:
+            Material: null
+    da38f6102ae4f9cc2e3283c15b1c5ed0:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    25b3860b1991d1b1465c85ccaa2484af:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    4d7e07ab5a03d9373ee0c9439fb45b17:
+        Name: BlueDark
+        MaterialInstance:
+            Material: 069a4bd6-1890-43c5-871d-941b650c7257:Environment/KayKit/DungeonPack/BlueDark
+    00ed698c97a6d267fc16e1f474a6da8b:
+        Name: GreenDark
+        MaterialInstance:
+            Material: c66e975e-eed1-43a1-93f7-b9b074c19dd8:Environment/KayKit/DungeonPack/GreenDark
+    3afc738cc3d10f4a968169f9e93c284f:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+    82e17e1b455cc668edeb205b88622df8:
+        Name: Black
+        MaterialInstance:
+            Material: 76cb3b51-1d3f-45b2-ac32-033fba513a3c:Environment/KayKit/DungeonPack/Black
+Modifiers: {}
+~SourceHashes:
+    ? 7695931f10d93865c1c832833b941c65~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/bookcaseWideFilled_broken.gltf.glb
+    : c4e0043375fdc1f2c7afa74575725663

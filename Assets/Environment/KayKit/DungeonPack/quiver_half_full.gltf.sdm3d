@@ -1,0 +1,24 @@
+!Model
+Id: 53c0f82b-e7d5-4b95-aca0-842a2f8ded13
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/quiver_half_full.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    dc2f4908a53c0983db13de9a9122c230:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+    760642f9b890594cf0f6886fee4eeabf:
+        Name: Metal
+        MaterialInstance:
+            Material: 57b37510-b663-4064-9d4c-2a975c889d85:Environment/KayKit/DungeonPack/Metal
+    e37bfb4ec89f53992354692596f4f860:
+        Name: GreenDark
+        MaterialInstance:
+            Material: c66e975e-eed1-43a1-93f7-b9b074c19dd8:Environment/KayKit/DungeonPack/GreenDark
+Modifiers: {}
+~SourceHashes:
+    ? 1214e8c64d6ec3524262cf08cb6316e3~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/quiver_half_full.gltf.glb
+    : bf399572b6b8a940eb7061fba0f12080

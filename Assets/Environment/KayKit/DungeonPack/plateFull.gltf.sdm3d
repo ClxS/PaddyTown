@@ -1,0 +1,20 @@
+!Model
+Id: 7a652028-b5f7-43c8-b42e-35370d3ce968
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/plateFull.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c6352eb14158939ec38f548632f3d821:
+        Name: Mud
+        MaterialInstance:
+            Material: ed8d9737-4d13-45f2-8fa0-4cf66f743828:Environment/KayKit/DungeonPack/Mud_2
+    a94633ae30400d42749239c2a90e7355:
+        Name: Beige
+        MaterialInstance:
+            Material: 93784b21-57aa-41ff-9d73-fa0a07bbfa37:Environment/KayKit/DungeonPack/Beige
+Modifiers: {}
+~SourceHashes:
+    ? 3654c152539a5230fe48268a3f036f6c~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/plateFull.gltf.glb
+    : 571f0d706094ce6f07d45711ccb626ad

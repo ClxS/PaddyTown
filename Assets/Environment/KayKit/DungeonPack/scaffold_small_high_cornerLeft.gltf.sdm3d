@@ -1,0 +1,16 @@
+!Model
+Id: 1f0cf923-27a2-4b1c-aed0-1d6b64213a6a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/scaffold_small_high_cornerLeft.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    5c1a388c20438e679d0c99598e912586:
+        Name: WoodDark
+        MaterialInstance:
+            Material: cbf9e6b5-c8f1-441a-ab87-2ef4fd0bf2e9:Environment/KayKit/DungeonPack/WoodDark
+Modifiers: {}
+~SourceHashes:
+    ? 82fef34ee0fffa9a059685fa260b5642~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/scaffold_small_high_cornerLeft.gltf.glb
+    : b8ff7b13f345ea9328b3e865dd44712c

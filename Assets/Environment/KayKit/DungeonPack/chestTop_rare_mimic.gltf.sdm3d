@@ -1,0 +1,24 @@
+!Model
+Id: afe685ee-dabc-4a57-bcf1-8f83d853f456
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chestTop_rare_mimic.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c3aad81153f0ba87cfe208e6d469891d:
+        Name: Gold
+        MaterialInstance:
+            Material: 26e4b95d-2e2c-41c1-b877-4693ea8bf463:Environment/KayKit/DungeonPack/Gold
+    be652ff698c9f0cdfe509d0ecebf3210:
+        Name: White
+        MaterialInstance:
+            Material: c63132fa-5c06-47f5-a3b8-781993e3724f:Environment/KayKit/DungeonPack/White
+    f3dad3cdaaf31360fb9ba8cc999db717:
+        Name: Black
+        MaterialInstance:
+            Material: 76cb3b51-1d3f-45b2-ac32-033fba513a3c:Environment/KayKit/DungeonPack/Black
+Modifiers: {}
+~SourceHashes:
+    ? 46c883e73eb4b34be1bc52108072837b~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/chestTop_rare_mimic.gltf.glb
+    : 10ef9b0341d23b0b8e8cd926cd4a2073

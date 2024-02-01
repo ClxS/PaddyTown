@@ -1,0 +1,36 @@
+!SpriteSheet
+Id: db5491a6-714b-4ebc-81a4-a03d55883ddf
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    b860cf76db5b78905d1f1d491fc1a5b7:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 5, Y: 2, Width: 20, Height: 30}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    b0c8519ce0128aceac81363c9a2837d4:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 37, Y: 4, Width: 20, Height: 28}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    20f4ea6f5b72bcd7df9697f4a8af7760:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 69, Y: 4, Width: 20, Height: 28}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    4263a25fbb5e7252fbc77fd5b90035f9:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 101, Y: 3, Width: 20, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

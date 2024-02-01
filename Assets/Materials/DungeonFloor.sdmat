@@ -1,0 +1,17 @@
+!MaterialAsset
+Id: 21dbff5f-bd55-4fe9-8564-2c114775316f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: c9e26b73-03b6-492f-8132-0b8d6890aa58:Sprites/Environment/DungeonPrison/DungeonFloor
+            FallbackValue:
+                Value: {R: 1.0, G: 0.8392157, B: 0.43529412, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 10.0, Y: 10.0}
+Layers: {}

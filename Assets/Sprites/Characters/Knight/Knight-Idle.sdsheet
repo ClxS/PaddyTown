@@ -1,0 +1,36 @@
+!SpriteSheet
+Id: 55860a46-dfc0-439c-b965-5f1aee449d43
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    44b10f2aceb81fec54ac28ca1b410719:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 5, Y: 3, Width: 19, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    220e1750113adc2e0659d1b9c5dd8c79:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 37, Y: 5, Width: 19, Height: 27}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    2f8bb2f016e46ad0df8225c22c633d6d:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 69, Y: 5, Width: 19, Height: 27}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    444f703e8115b6e8e28a720020f237f9:
+        Source: !file ../../../../../../../Downloads/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/Idle-Sheet.png
+        Name: Idle-Sheet
+        TextureRegion: {X: 101, Y: 4, Width: 19, Height: 28}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

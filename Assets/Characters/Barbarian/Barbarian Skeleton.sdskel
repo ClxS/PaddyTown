@@ -1,0 +1,66 @@
+!Skeleton
+Id: ca178ea7-de0d-4419-9e71-de675eb12e25
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../Pictures/Assets/Kaykit/KayKit_Adventurers_1.0_FREE/KayKit_Adventurers_1.0_FREE/Characters/fbx/Barbarian.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    3c9c854263c5bbbd019a4681d7e5772b: {Name: RootNode, Depth: 0}
+    78d68c62dd114a8397da2febeacfd9b5: {Name: Barbarian_ArmLeft, Depth: 1}
+    13d4f947d7d0550e4a1944993e19620f: {Name: Barbarian_ArmRight, Depth: 1}
+    ccb79639265af5f84e8e278d3a7ce1f3: {Name: Barbarian_Body, Depth: 1}
+    7e137328ced1461a7e38732659ed0f0e: {Name: Barbarian_Head, Depth: 1}
+    c34bfd23ad8915374f8b821e7f3dc98e: {Name: Barbarian_LegLeft, Depth: 1}
+    958673b4a39a78c01ebd9e0c7d6bddc6: {Name: Barbarian_LegRight, Depth: 1}
+    dedc91b8733f8d46db805b2af630dd9b: {Name: Rig, Depth: 1}
+    cd2af0193c5006e10d6c26734503c345: {Name: root, Depth: 2}
+    25169ce5928b3112bb5338ea9fc04171: {Name: hips, Depth: 3}
+    b1fa4ef66d3aff8fc390f412e6c62634: {Name: spine, Depth: 4}
+    354e630a72d34e20e65f19aee768f70f: {Name: chest, Depth: 5}
+    c791f272b88f831194cf13c1bc0a414c: {Name: Barbarian_Cape, Depth: 6}
+    a3dfda80834570c69c4d51fa3c9b5461: {Name: upperarm.l, Depth: 6}
+    e0cc830d107b4e83636e635d1d22ab2c: {Name: lowerarm.l, Depth: 7}
+    e79ac93ddd3ab1fdd54c9d5b0e987278: {Name: wrist.l, Depth: 8}
+    93f7b1fc7c65443b4075dded339386cf: {Name: hand.l, Depth: 9}
+    c2f2920e9369771514712f14c7413c4c: {Name: handslot.l, Depth: 10}
+    dbf6cb2e4dfcb593c7a8374e85493e66: {Name: Barbarian_Round_Shield, Depth: 11}
+    124969c5130b65d2b44c17f322ad72fa: {Name: 1H_Axe_Offhand, Depth: 11}
+    f0b97e33fa96f2b2a4c4e2a1aa89a64b: {Name: upperarm.r, Depth: 6}
+    9506c2e04ada310788eb03c0facbef27: {Name: lowerarm.r, Depth: 7}
+    c6cd1841d4b8d3728526be50954a3c55: {Name: wrist.r, Depth: 8}
+    9ff2a97cd1eabaed5945d263a5371b2a: {Name: hand.r, Depth: 9}
+    63d8dfee1ebaeee8833e4cf57ae178be: {Name: handslot.r, Depth: 10}
+    df96edc1f76ef62bf8e2256ec09a1055: {Name: 1H_Axe, Depth: 11}
+    2389266467a1fd0a9ff332fa59a90f8d: {Name: 2H_Axe, Depth: 11}
+    88e87d0db502bade32667a7424bc69a9: {Name: Mug, Depth: 11}
+    496dc7ad36bccd4c1f74e431a944b684: {Name: head, Depth: 6}
+    20a373ce04184046d412bde199e71ba7: {Name: Barbarian_Hat, Depth: 7}
+    3c3c0ec05aece93f42350cdb85a4e7af: {Name: upperleg.l, Depth: 4}
+    b521533c2f0bbc1b9b58f72268b5725b: {Name: lowerleg.l, Depth: 5}
+    ac0e40409fbc19e7f9a6f9c5b046ce35: {Name: foot.l, Depth: 6}
+    998b4eaf7f2642b6cd540e6f9b2d65c7: {Name: toes.l, Depth: 7}
+    311ebc98d98b9fc17fd2709f2c1a5ef0: {Name: upperleg.r, Depth: 4}
+    4b67ea9e0b1590197b16cc838c255917: {Name: lowerleg.r, Depth: 5}
+    2ba97dfc27f280049eb3882a2e2abfe4: {Name: foot.r, Depth: 6}
+    95be011e9248250d89e714c3cb74fd5d: {Name: toes.r, Depth: 7}
+    547e330b3752c85f284f2ed8385f6b5d: {Name: kneeIK.l, Depth: 3}
+    3f81acdec875ec5167585afe544240ef: {Name: control-toe-roll.l, Depth: 3}
+    db6d17c663ceca3040cd07a0858f20fa: {Name: control-heel-roll.l, Depth: 4}
+    73329a497feb55d125896ebeff4e2c02: {Name: control-foot-roll.l, Depth: 5}
+    4ada4e2ecc9d132e831f51c9ecbe972c: {Name: heelIK.l, Depth: 6}
+    26d993f9c014bd961700f0022b015ece: {Name: IK-foot.l, Depth: 6}
+    83c8613a23f67d9bcb7705467669ad4e: {Name: IK-toe.l, Depth: 5}
+    851a2e525e51665104319c9a09f10303: {Name: kneeIK.r, Depth: 3}
+    7972025b8ecd9f66365fce5a90a0b8ff: {Name: control-toe-roll.r, Depth: 3}
+    f3119ed0e1550de592ed5255621a647a: {Name: control-heel-roll.r, Depth: 4}
+    21c81a7e66a3854a47f470af21c7cc94: {Name: control-foot-roll.r, Depth: 5}
+    0f6a71b2a7b0f0d628dc00381be81986: {Name: heelIK.r, Depth: 6}
+    d0ff087723973131c457b3cd715e56c5: {Name: IK-foot.r, Depth: 6}
+    68d5a230322c21863e140644eddebee5: {Name: IK-toe.r, Depth: 5}
+    14751496e475616b297212ec94266e8f: {Name: elbowIK.l, Depth: 3}
+    bc40ec61ea14205bc16c3e06b3c174b9: {Name: handIK.l, Depth: 3}
+    7ece9f7406b17e005fde72780078c6e1: {Name: elbowIK.r, Depth: 3}
+    7c10f9205c5be790277a47abddd3c7fa: {Name: handIK.r, Depth: 3}
+~SourceHashes:
+    ? 4393b31f7b3120f62843d0c5d917cbb9~../../../../../../Pictures/Assets/Kaykit/KayKit_Adventurers_1.0_FREE/KayKit_Adventurers_1.0_FREE/Characters/fbx/Barbarian.fbx
+    : 20fb1bfe29ebb73a4797b8e9a0915973

@@ -1,0 +1,7 @@
+!Texture
+Id: a82ac298-6afe-45be-9af7-8107e40e1039
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../Pictures/Assets/Kaykit/KayKit_Adventurers_1.0_FREE/KayKit_Adventurers_1.0_FREE/Textures/barbarian_texture.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

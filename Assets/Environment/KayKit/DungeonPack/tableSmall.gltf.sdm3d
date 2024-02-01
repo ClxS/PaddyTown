@@ -1,0 +1,16 @@
+!Model
+Id: d6f79ae8-0771-408a-8c7a-7849be609545
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/tableSmall.gltf.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    92d653084d15f3f1d213755119adf111:
+        Name: BrownDark
+        MaterialInstance:
+            Material: ed4e6fda-4d16-4f4f-9d93-d1bf9f714fd0:Environment/KayKit/DungeonPack/BrownDark
+Modifiers: {}
+~SourceHashes:
+    ? 20d38b1fe4e94ab27cf0ef053d2d44a1~../../../../../../../Pictures/Assets/Kaykit/kaykit_dungeon_pack_1.0/Models/gltf/tableSmall.gltf.glb
+    : 1325afa80236f96b56bc1c577c01256d
