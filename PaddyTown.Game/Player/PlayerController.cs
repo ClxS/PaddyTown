@@ -1,6 +1,7 @@
 ﻿// Copyright (c) .NET Foundation and Contributors (https://dotnetfoundation.org/ & https://stride3d.net) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 
+using System;
 using Stride.Core;
 using Stride.Core.Mathematics;
 using Stride.Engine;
@@ -23,6 +24,12 @@ public class PlayerController : SyncScript
     public static readonly EventKey<float> RunSpeedEventKey = new EventKey<float>();
 
     private CharacterComponent characterComponent;
+
+    private float fadingImpulse = 0.0f;
+    private bool wasPressingJumpPreviously = false;
+    private bool hasDoubleJumped = false;
+
+    private DateTimeOffset jumpStart;
 
     [Display("Jump Force")] public float JumpForce = 10f;
 
@@ -47,9 +54,34 @@ public class PlayerController : SyncScript
         this.characterComponent.SetVelocity(velocity);
 
         // Handle jump input
-        if (this.jumpEvent.TryReceive(out bool jump) && jump && this.IsGrounded())
+        if (this.jumpEvent.TryReceive(out bool jump) && jump)
         {
-            Jump();
+            if (this.characterComponent.IsGrounded || (!this.wasPressingJumpPreviously && !this.hasDoubleJumped))
+            {
+                Jump();
+                jumpStart = DateTimeOffset.UtcNow;
+            }
+            else if ((jumpStart != default && (DateTimeOffset.UtcNow - jumpStart).TotalMilliseconds < 200))
+            {
+                Jump(0.2f);
+            }
+
+            this.wasPressingJumpPreviously = true;
+        }
+        else
+        {
+            this.wasPressingJumpPreviously = false;   
+        }
+
+        if (this.fadingImpulse > 0.1f)
+        {
+            this.characterComponent.Jump(fadingImpulse * Vector3.UnitY);
+            fadingImpulse *= 0.65f;
+        }
+    
+        if (this.characterComponent.IsGrounded)
+        {
+            this.hasDoubleJumped = false;
         }
     }
 
@@ -67,13 +99,8 @@ public class PlayerController : SyncScript
         return moveInput;
     }
 
-    private void Jump()
+    private void Jump(float multiplier = 1.0f)
     {
-        this.characterComponent.Jump(this.JumpForce * Vector3.UnitY);
-    }
-
-    private bool IsGrounded()
-    {
-        return this.characterComponent.IsGrounded;
+        fadingImpulse += this.JumpForce * multiplier;
     }
 }

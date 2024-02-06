@@ -68,6 +68,10 @@ Hierarchy:
         - ref!! 0e9f7d5c-723f-4466-b568-cba57a04771c
         - ref!! 1736515f-4326-4773-8a98-01bffa717493
         - ref!! 9b305604-42ea-4bd9-857c-062b1f7767b9
+        - ref!! c46aece1-cda8-4921-a0b8-27ffef38b526
+        - ref!! 9c554d7b-4a7c-442d-aecc-8e4bce48d62e
+        - ref!! 3f697962-dea8-4f32-8be5-f44081455111
+        - ref!! 4d17fbe5-c9ed-45f6-b2bc-4f2358b94a9f
     Parts:
         -   Folder: Environment/BeginnersHall/Floors
             Entity:
@@ -262,6 +266,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             b34fec68e1d9fa12d45759aa4d7caa97: ref!! 79878e66-785e-420b-8bad-c20613e5d560
+                            08e53b20dd931cf2d3b8699fc312b3b6: ref!! cf6aeda7-03a2-4139-8b6e-deefd5c0a79c
                             52ad287fe611de6018b26a0ed8ffa16b: ref!! 523a585a-c24d-486f-a011-a5bd466ea50b
                     0bb7f1227e124863230717ccd0b1038b: !ModelComponent
                         Id: 5e92cfb5-f15f-43d4-aa1e-601b53265bad
@@ -489,6 +494,34 @@ Hierarchy:
                         ColliderShapes:
                             cd9a3fabfcff31a953672d60cc71b87c: !StaticMeshColliderShapeDesc
                                 Model: f4422efa-bf60-4266-9571-c913388f7395:Environment/KayKit/DungeonPack/tileBrickB_large.gltf
+        -   Folder: null
+            Entity:
+                Id: 3f697962-dea8-4f32-8be5-f44081455111
+                Name: wallIntersection.gltf
+                Components:
+                    30362fe7c926b2100242a4129a9db989: !TransformComponent
+                        Id: 6ef31b0a-60a0-4c90-b300-28ae78714191
+                        Position: {X: 10.941509, Y: 7.1239805, Z: -1.5364015}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2e3606724f3bd41cd0901d95406e8728: !ModelComponent
+                        Id: 3491301e-430b-458e-9fdc-1c7e60e5b729
+                        Model: 8ff8834d-fc2f-4879-88ef-d1ae8c3364a2:Environment/KayKit/DungeonPack/wallIntersection.gltf
+                        Materials: {}
+                    186ecd2e56976f7a3dbaf7177f1afce7: !StaticColliderComponent
+                        Id: 9bc09713-faf5-4795-a8b1-353aaa5215bf
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3c14d8a2ff4d54e9716567609626d86f: !StaticMeshColliderShapeDesc
+                                Model: 8ff8834d-fc2f-4879-88ef-d1ae8c3364a2:Environment/KayKit/DungeonPack/wallIntersection.gltf
         -   Folder: Environment/BeginnersHall/Walls
             Entity:
                 Id: 4ab342e2-7f45-4486-92bd-19505fba19f6
@@ -504,6 +537,28 @@ Hierarchy:
                         Id: 4461e5ad-0f32-419b-a307-3ba7a78315df
                         Model: d02ab6ab-fb8e-4a20-bb36-f70fa1b4ebec:Environment/KayKit/DungeonPack/pillar.gltf
                         Materials: {}
+        -   Entity:
+                Id: 4d17fbe5-c9ed-45f6-b2bc-4f2358b94a9f
+                Name: Directional light
+                Components:
+                    0cb318c0fcc106b4fbff09d6510342c2: !TransformComponent
+                        Id: 2f21768e-0a6a-46e8-857c-d5f2caec3c56
+                        Position: {X: 3.6071212, Y: 0.0, Z: 5.969279}
+                        Rotation: {X: -0.5254785, Y: 0.0, Z: 0.0, W: 0.85080695}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    4aa15684f79dbb72f7dff7002f636fe8: !LightComponent
+                        Id: d020d15c-a1b7-4172-afb1-155ed1d38202
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow: !LightDirectionalShadowMap
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 2.0
         -   Folder: Environment/BeginnersHall/Floors
             Entity:
                 Id: 529dbc54-ea9d-46a3-b9f0-72d7fd30d222
@@ -686,7 +741,9 @@ Hierarchy:
                         AnimationIdle: e42dae60-bec6-43e4-a606-c12fa841107a:Characters/Animations/Idle
                         AnimationWalk: d8832167-04bf-4fd0-9385-7a33d1df6ec8:Characters/Animations/Walk
                         AnimationRun: 3f9b4176-8a9d-4937-8d6a-a9b2b365753a:Characters/Animations/Run
-                        AnimationJump: ae8027b4-e6f9-4583-bbc0-56c0259bb40c:Characters/Animations/Jump
+                        AnimationJumpStart: 8557a96b-8277-4a2f-89ce-9bbe561a012d:Characters/Animations/JumpStart
+                        AnimationJumpEnd: 7421e3c4-689a-4f6c-a5a7-301cfc073315:Characters/Animations/JumpEnd
+                        AnimationJumpAir: ff6e17ff-ae84-4a87-87f8-c7b89a16de20:Characters/Animations/JumpAir
                         WalkThreshold: 0.25
                         TimeFactor: 1.0
         -   Entity:
@@ -695,7 +752,7 @@ Hierarchy:
                 Components:
                     7309e82363698eb78a290c5b700c71cc: !TransformComponent
                         Id: 79878e66-785e-420b-8bad-c20613e5d560
-                        Position: {X: -0.04647071, Y: 0.7617209, Z: 0.6331661}
+                        Position*: {X: -1.2088791, Y: 0.7617209, Z: 0.6331661}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1294,6 +1351,34 @@ Hierarchy:
                 BasePartAsset: d6c3dc8f-8e29-4f51-90c6-91514b747d1d:Torch
                 BasePartId: 126dd502-83a2-4385-9daf-81d48938360a
                 InstanceId: 48b03ab0-12db-42d8-bc67-96925e224a7e
+        -   Folder: null
+            Entity:
+                Id: 9c554d7b-4a7c-442d-aecc-8e4bce48d62e
+                Name: wallIntersection.gltf
+                Components:
+                    30362fe7c926b2100242a4129a9db989: !TransformComponent
+                        Id: e22bfc5c-07bc-4dba-a457-9a51fce5e0f1
+                        Position: {X: 10.941509, Y: 3.4986522, Z: -1.5364015}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2e3606724f3bd41cd0901d95406e8728: !ModelComponent
+                        Id: 1d318e66-8f01-4e01-b1b9-efdc99560878
+                        Model: 8ff8834d-fc2f-4879-88ef-d1ae8c3364a2:Environment/KayKit/DungeonPack/wallIntersection.gltf
+                        Materials: {}
+                    186ecd2e56976f7a3dbaf7177f1afce7: !StaticColliderComponent
+                        Id: ea8b9389-dfef-44e5-a004-553836d52dae
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3c14d8a2ff4d54e9716567609626d86f: !StaticMeshColliderShapeDesc
+                                Model: 8ff8834d-fc2f-4879-88ef-d1ae8c3364a2:Environment/KayKit/DungeonPack/wallIntersection.gltf
         -   Folder: Environment/BeginnersHall/Floors
             Entity:
                 Id: 9cce6fc3-b101-485c-a447-345527f78d3a
@@ -1669,6 +1754,58 @@ Hierarchy:
                         ColliderShapes:
                             e99da28ae9b890eb9a613a0f03dd394b: !StaticMeshColliderShapeDesc
                                 Model: f4422efa-bf60-4266-9571-c913388f7395:Environment/KayKit/DungeonPack/tileBrickB_large.gltf
+        -   Folder: null
+            Entity:
+                Id: c398a2f8-b051-4e48-a273-365a79f57cb3
+                Name: Point light
+                Components:
+                    7309e82363698eb78a290c5b700c71cc: !TransformComponent
+                        Id: cf6aeda7-03a2-4139-8b6e-deefd5c0a79c
+                        Position*: {X: -1.2088791, Y: 7.796323, Z: 0.6331661}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2a8b6eb88ebad9144530fdbc7865a867: !LightComponent
+                        Id: 615a0cc2-a0bd-400e-b879-9f6cfe9ac80b
+                        Type: !LightPoint
+                            Color: !ColorRgbProvider
+                                Value: {R: 0.96875, G: 0.64240235, B: 0.37539062}
+                            Radius: 5.0
+                            Shadow: !LightPointShadowMap
+                                Size: Small
+                                BiasParameters: {}
+                        Intensity: 10.0
+            Base:
+                BasePartAsset: d6c3dc8f-8e29-4f51-90c6-91514b747d1d:Torch
+                BasePartId: 8c870e80-f85d-437e-841d-4837bdce5aed
+                InstanceId: baac980d-7a79-4804-a4ca-cc6e1df07ca5
+        -   Entity:
+                Id: c46aece1-cda8-4921-a0b8-27ffef38b526
+                Name: wallIntersection.gltf
+                Components:
+                    30362fe7c926b2100242a4129a9db989: !TransformComponent
+                        Id: e8285f5a-4659-4d53-b0bf-bf221aade64f
+                        Position: {X: 10.941509, Y: 0.0, Z: -1.5364015}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2e3606724f3bd41cd0901d95406e8728: !ModelComponent
+                        Id: 911498d5-a740-4296-8c3c-e9a22ced0ec2
+                        Model: 8ff8834d-fc2f-4879-88ef-d1ae8c3364a2:Environment/KayKit/DungeonPack/wallIntersection.gltf
+                        Materials: {}
+                    186ecd2e56976f7a3dbaf7177f1afce7: !StaticColliderComponent
+                        Id: 40a81f07-322d-4680-950a-6a9074366499
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3c14d8a2ff4d54e9716567609626d86f: !StaticMeshColliderShapeDesc
+                                Model: 8ff8834d-fc2f-4879-88ef-d1ae8c3364a2:Environment/KayKit/DungeonPack/wallIntersection.gltf
         -   Folder: Environment/BeginnersHall/Walls
             Entity:
                 Id: c7a76389-413b-4c86-a607-ed54c2d2bf5e
@@ -1778,8 +1915,8 @@ Hierarchy:
                 Components:
                     cd882487b5d5ef1147ec4ad838397264: !TransformComponent
                         Id: bdb06e14-018d-4c5e-b912-c29ec8688e50
-                        Position: {X: 8.882615, Y: 0.0, Z: -1.7302082}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Position: {X: 7.235822, Y: 0.0, Z: -1.7302082}
+                        Rotation: {X: 0.0, Y: -0.03791758, Z: 0.0, W: 0.99928087}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     bfae00dfaef05c2e8925b50cf4a708c3: !ModelComponent
@@ -2026,11 +2163,10 @@ Hierarchy:
                         Id: a99b7b19-d2a8-4748-a1b8-d7261d35f329
                         Type: !LightSkybox
                             Skybox: af4a3069-ce42-441e-8c67-5d635cf20634:Skybox
-                        Intensity: 0.02
                     aa0620582b7241f8b026bafcf0a07f05: !BackgroundComponent
                         Id: 2a03610c-5655-4a9f-b84b-f669c4f63b0a
                         Texture: 93812b29-133c-4f90-8094-fd4405d3b073:Skybox Texture
-                        Intensity: 0.0
+                        Intensity: 5.0
         -   Folder: Environment/BeginnersHall/Floors
             Entity:
                 Id: e8c6cbaa-2de5-40a8-bf6c-03e1e7bc3fd7

@@ -11,6 +11,7 @@ using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Engine.Events;
 using Stride.Games;
+using Stride.Physics;
 
 namespace PaddyTown.Player;
 
@@ -25,7 +26,9 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
     private AnimationClip animationClipWalkLerp2;
 
     private AnimationClipEvaluator animEvaluatorIdle;
-    private AnimationClipEvaluator animEvaluatorJump;
+    private AnimationClipEvaluator animEvaluatorJumpStart;
+    private AnimationClipEvaluator animEvaluatorJumpEnd;   
+    private AnimationClipEvaluator animEvaluatorJumpAir;
     private AnimationClipEvaluator animEvaluatorRun;
     private AnimationClipEvaluator animEvaluatorWalk;
 
@@ -37,6 +40,8 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
     private float runVelocity;
     private AnimationState state = AnimationState.Walking;
     private float walkLerpFactor = 0.5f;
+    
+    private CharacterComponent characterComponent;
 
     [Display("Animation Component")] public AnimationComponent AnimationComponent { get; set; }
 
@@ -46,7 +51,11 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
 
     [Display("Run")] public AnimationClip AnimationRun { get; set; }
 
-    [Display("Jump")] public AnimationClip AnimationJump { get; set; }
+    [Display("JumpStart")] public AnimationClip AnimationJumpStart { get; set; }
+    
+    [Display("JumpEnd")] public AnimationClip AnimationJumpEnd { get; set; }
+    
+    [Display("JumpAir")] public AnimationClip AnimationJumpAir { get; set; }
 
     [DataMemberRange(0, 1, 0.01, 0.1, 3)]
     [Display("Walk Threshold")]
@@ -101,9 +110,19 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
             throw new InvalidOperationException("Running animation is not set");
         }
 
-        if (this.AnimationJump == null)
+        if (this.AnimationJumpStart == null)
         {
-            throw new InvalidOperationException("Punching animation is not set");
+            throw new InvalidOperationException("JumpStart animation is not set");
+        }
+        
+        if (this.AnimationJumpEnd == null)
+        {
+            throw new InvalidOperationException("JumpEnd animation is not set");
+        }
+        
+        if (this.AnimationJumpAir == null)
+        {
+            throw new InvalidOperationException("JumpAir animation is not set");
         }
 
         // By setting a custom blend tree builder we can override the default behavior of the animation system
@@ -114,7 +133,9 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
         this.animEvaluatorIdle = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationIdle);
         this.animEvaluatorWalk = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationWalk);
         this.animEvaluatorRun = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationRun);
-        this.animEvaluatorJump = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationJump);
+        this.animEvaluatorJumpStart = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationJumpStart);
+        this.animEvaluatorJumpEnd = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationJumpEnd);
+        this.animEvaluatorJumpAir = this.AnimationComponent.Blender.CreateEvaluator(this.AnimationJumpAir);
 
         // Initial walk lerp
         this.walkLerpFactor = 0;
@@ -122,6 +143,12 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
         this.animEvaluatorWalkLerp2 = this.animEvaluatorWalk;
         this.animationClipWalkLerp1 = this.AnimationIdle;
         this.animationClipWalkLerp2 = this.AnimationWalk;
+        
+        this.characterComponent = this.Entity.Get<CharacterComponent>();
+        if (this.characterComponent == null)
+        {
+            throw new InvalidOperationException("The character component is not set");
+        }
     }
 
     public override void Cancel()
@@ -129,7 +156,7 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
         this.AnimationComponent.Blender.ReleaseEvaluator(this.animEvaluatorIdle);
         this.AnimationComponent.Blender.ReleaseEvaluator(this.animEvaluatorWalk);
         this.AnimationComponent.Blender.ReleaseEvaluator(this.animEvaluatorRun);
-        this.AnimationComponent.Blender.ReleaseEvaluator(this.animEvaluatorJump);
+        this.AnimationComponent.Blender.ReleaseEvaluator(this.animEvaluatorJumpStart);
     }
 
     private void UpdateWalking()
@@ -146,24 +173,36 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
             };
         }
 
-        if (speed < this.WalkThreshold)
+
+        if (this.characterComponent.IsGrounded)
         {
-            this.walkLerpFactor = speed / this.WalkThreshold;
-            this.walkLerpFactor =
-                (float)Math.Sqrt(this
-                    .walkLerpFactor); // Idle-Walk blend looks really werid, so skew the factor towards walking
-            this.animEvaluatorWalkLerp1 = this.animEvaluatorIdle;
-            this.animEvaluatorWalkLerp2 = this.animEvaluatorWalk;
-            this.animationClipWalkLerp1 = this.AnimationWalk;
-            this.animationClipWalkLerp2 = this.AnimationWalk;
+            if (speed < this.WalkThreshold)
+            {
+                this.walkLerpFactor = speed / this.WalkThreshold;
+                this.walkLerpFactor =
+                    (float)Math.Sqrt(this
+                        .walkLerpFactor); // Idle-Walk blend looks really werid, so skew the factor towards walking
+                this.animEvaluatorWalkLerp1 = this.animEvaluatorIdle;
+                this.animEvaluatorWalkLerp2 = this.animEvaluatorWalk;
+                this.animationClipWalkLerp1 = this.AnimationWalk;
+                this.animationClipWalkLerp2 = this.AnimationWalk;
+            }
+            else
+            {
+                this.walkLerpFactor = (speed - this.WalkThreshold) / (1.0f - this.WalkThreshold);
+                this.animEvaluatorWalkLerp1 = this.animEvaluatorRun;
+                this.animEvaluatorWalkLerp2 = this.animEvaluatorRun;
+                this.animationClipWalkLerp1 = this.AnimationRun;
+                this.animationClipWalkLerp2 = this.AnimationRun;
+            }
         }
         else
         {
             this.walkLerpFactor = (speed - this.WalkThreshold) / (1.0f - this.WalkThreshold);
-            this.animEvaluatorWalkLerp1 = this.animEvaluatorRun;
-            this.animEvaluatorWalkLerp2 = this.animEvaluatorRun;
-            this.animationClipWalkLerp1 = this.AnimationRun;
-            this.animationClipWalkLerp2 = this.AnimationRun;
+            this.animEvaluatorWalkLerp1 = this.animEvaluatorJumpAir;
+            this.animEvaluatorWalkLerp2 = this.animEvaluatorJumpAir;
+            this.animationClipWalkLerp1 = this.AnimationJumpAir;
+            this.animationClipWalkLerp2 = this.AnimationJumpAir;
         }
 
         // Use DrawTime rather than UpdateTime
