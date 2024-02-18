@@ -2,86 +2,161 @@
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 
 using System;
+using PaddyTown.Core;
+using PaddyTown.Physics;
+using Stride.Animations;
 using Stride.Core;
+using Stride.Core.Annotations;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Engine.Events;
+using Stride.Particles;
 using Stride.Physics;
 
 namespace PaddyTown.Player;
 
 public class PlayerController : SyncScript
 {
-    // The character controller does only two things - moves the character and makes it attack close targets
-    //  If the character is too far from its target it will run after it until it's close enough then halt movement and attack
-    //  If the character is walking towards a specific location instead it will run to it then halt movement when close enough
-
-    private readonly EventReceiver<int> moveDestinationEvent = new EventReceiver<int>(PlayerInput.MoveEventKey);
-    private readonly EventReceiver<bool> jumpEvent = new EventReceiver<bool>(PlayerInput.JumpEventKey);
-
-    public static readonly EventKey<bool> IsAttackingEventKey = new EventKey<bool>();
-    public static readonly EventKey<int> DirectionEventKey = new EventKey<int>();
-    public static readonly EventKey<float> RunSpeedEventKey = new EventKey<float>();
+    public static readonly EventKey<bool> IsAttackingEventKey = new();
+    public static readonly EventKey<FacingDirection> DirectionEventKey = new();
+    public static readonly EventKey<float> RunSpeedEventKey = new();
+    private readonly EventReceiver<bool> jumpEvent = new(PlayerInput.JumpEventKey);
+    private readonly EventReceiver<int> moveDestinationEvent = new(PlayerInput.MoveEventKey);
 
     private CharacterComponent characterComponent;
+    private FacingDirection direction = FacingDirection.Right;
 
-    private float fadingImpulse = 0.0f;
-    private bool wasPressingJumpPreviously = false;
-    private bool hasDoubleJumped = false;
-
+    private bool hasDoubleJumped;
+    private DateTimeOffset wallJumpStart;
     private DateTimeOffset jumpStart;
+    private bool wasPressingJumpPreviously;
+    private Simulation simulation;
+    private Vector3 baseGravity;
+    private float curveLength;
+    private float gravityHoldFactor = 0.0f;
+    
+    private const float JumpForce = 3f;
 
-    [Display("Jump Force")] public float JumpForce = 10f;
+    [NotNull]
+    [DataMember(10)]
+    [Display("Gravity Curve")]
+    public IComputeCurve<float> Curve { get; set; }
+
 
     [Display("Max Velocity X")] public float MaxVelocityX = 10;
 
 
     [Display("Run Speed")] public float MoveSpeed = 1;
 
+    public FacingDirection Direction
+    {
+        get => this.direction;
+        set
+        {
+            this.direction = value;
+            DirectionEventKey.Broadcast(this.direction);
+        }
+    }
+
     public override void Start()
     {
         this.characterComponent = this.Entity.Get<CharacterComponent>();
+        this.simulation = this.GetSimulation();
+        this.baseGravity = this.characterComponent.Gravity;
+        this.Curve.UpdateChanges();
     }
+
+    private float moveSpeed;
 
     public override void Update()
     {
-        float moveInput = this.GetHorizontalInput();
-        Vector3 velocity = new(moveInput * this.MoveSpeed, 0, 0);
+        if (this.characterComponent.IsGrounded)
+        {
+            float moveInput = this.GetHorizontalInput();
+            if (moveInput == 0.0f)
+            {
+                this.moveSpeed *= 0.8f;
+            }
+            else
+            {
+                if (MathF.Sign(this.moveSpeed) == MathF.Sign(moveInput))
+                {
+                    this.moveSpeed += moveInput * this.MoveSpeed * this.simulation.FixedTimeStep;
+                }
+                else
+                {
+                    this.moveSpeed *= 0.8f;
+                    this.moveSpeed += moveInput * this.MoveSpeed * this.simulation.FixedTimeStep;
+                }
+            }
+        }
+
+        Vector3 velocity = new Vector3(this.moveSpeed, 0, 0);
+        velocity.X = MathUtil.Clamp(velocity.X, -this.MaxVelocityX, this.MaxVelocityX);
         
         RunSpeedEventKey.Broadcast(velocity.X);
-        
-        velocity.X = MathUtil.Clamp(velocity.X, -this.MaxVelocityX, this.MaxVelocityX);
+
         this.characterComponent.SetVelocity(velocity);
 
         // Handle jump input
         if (this.jumpEvent.TryReceive(out bool jump) && jump)
         {
-            if (this.characterComponent.IsGrounded || (!this.wasPressingJumpPreviously && !this.hasDoubleJumped))
-            {
-                Jump();
-                jumpStart = DateTimeOffset.UtcNow;
-            }
-            else if ((jumpStart != default && (DateTimeOffset.UtcNow - jumpStart).TotalMilliseconds < 200))
-            {
-                Jump(0.2f);
-            }
-
-            this.wasPressingJumpPreviously = true;
+            this.RespondToJumpInput();
         }
         else
         {
-            this.wasPressingJumpPreviously = false;   
+            this.wasPressingJumpPreviously = false;
         }
 
-        if (this.fadingImpulse > 0.1f)
-        {
-            this.characterComponent.Jump(fadingImpulse * Vector3.UnitY);
-            fadingImpulse *= 0.65f;
-        }
-    
         if (this.characterComponent.IsGrounded)
         {
             this.hasDoubleJumped = false;
+            this.characterComponent.Gravity = this.baseGravity;
+        }
+        else
+        {
+            float curveGravityProgress = Math.Clamp((float)(DateTimeOffset.UtcNow - this.jumpStart).TotalMilliseconds / 200.0f, 0.0f, 1.0f);
+            this.characterComponent.Gravity = this.baseGravity * this.Curve.Evaluate(curveGravityProgress) * (1.0f - gravityHoldFactor);
+            gravityHoldFactor *= 0.9f;
+        }
+    }
+
+    private void RespondToJumpInput()
+    {
+        if (!this.wasPressingJumpPreviously)
+        {
+            this.wasPressingJumpPreviously = true;
+
+            if (this.characterComponent.IsGrounded)
+            {
+                this.characterComponent.Jump(JumpForce * Vector3.UnitY);
+                this.jumpStart = DateTimeOffset.UtcNow;
+                return;
+            }
+            
+            // if (CollisionTool.Collides(this.simulation, this.characterComponent, this.direction, 1.0f, PhysicsLayer.Jumpable))
+            // {
+            //     this.jumpStart = DateTimeOffset.UtcNow;
+            //     this.wallJumpStart = DateTimeOffset.UtcNow;
+            //     return;
+            // }
+            //
+            // if (!this.hasDoubleJumped && !this.characterComponent.IsGrounded)
+            // {
+            //     this.jumpStart = DateTimeOffset.UtcNow;
+            //     this.hasDoubleJumped = true;
+            // }
+        }
+        else
+        {
+            // If the player is pressing jump again within 200ms of the last jump extend the height of the jump
+            if (this.jumpStart != default && (DateTimeOffset.UtcNow - this.wallJumpStart).TotalMilliseconds < 250)
+            {
+            }
+            else if (this.jumpStart != default && (DateTimeOffset.UtcNow - this.jumpStart).TotalMilliseconds < 300)
+            {
+                this.gravityHoldFactor = 0.80f;
+            }
         }
     }
 
@@ -93,14 +168,9 @@ public class PlayerController : SyncScript
         if (this.moveDestinationEvent.TryReceive(out int direction))
         {
             moveInput = direction;
-            DirectionEventKey.Broadcast(direction);
+            this.Direction = direction == 1 ? FacingDirection.Right : FacingDirection.Left;
         }
 
         return moveInput;
-    }
-
-    private void Jump(float multiplier = 1.0f)
-    {
-        fadingImpulse += this.JumpForce * multiplier;
     }
 }

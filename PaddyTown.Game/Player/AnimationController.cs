@@ -21,7 +21,7 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
 
     // Internal state
     private readonly EventReceiver<float> runSpeedEvent = new(PlayerController.RunSpeedEventKey);
-    private readonly EventReceiver<int> directionEvent = new(PlayerController.DirectionEventKey);
+    private readonly EventReceiver<FacingDirection> directionEvent = new(PlayerController.DirectionEventKey);
     private AnimationClip animationClipWalkLerp1;
     private AnimationClip animationClipWalkLerp2;
 
@@ -57,7 +57,6 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
     
     [Display("JumpAir")] public AnimationClip AnimationJumpAir { get; set; }
 
-    [DataMemberRange(0, 1, 0.01, 0.1, 3)]
     [Display("Walk Threshold")]
     public float WalkThreshold { get; set; } = 0.25f;
 
@@ -163,12 +162,12 @@ public class AnimationController : SyncScript, IBlendTreeBuilder
     {
         float speed = Math.Abs(this.runVelocity);
 
-        if (directionEvent.TryReceive(out int direction))
+        if (directionEvent.TryReceive(out FacingDirection direction))
         {
             this.AnimationComponent.Entity.Transform.RotationEulerXYZ = direction switch
             {
-                1 => new Vector3(0.0f, MathUtils.DegreesToRadians(90.0f), 0.0f),
-                -1 => new Vector3(0.0f, MathUtils.DegreesToRadians(-90.0f), 0.0f),
+                FacingDirection.Right => new Vector3(0.0f, MathUtils.DegreesToRadians(90.0f), 0.0f),
+                FacingDirection.Left => new Vector3(0.0f, MathUtils.DegreesToRadians(-90.0f), 0.0f),
                 _ => this.AnimationComponent.Entity.Transform.RotationEulerXYZ,
             };
         }

@@ -732,9 +732,35 @@ Hierarchy:
                         Id: 1a9c6bb6-cb5a-48f5-8fa8-c8cd086765de
                     58f019c6a722a8bcfb8d4b4a6d4e08f7: !PaddyTown.Player.PlayerController,PaddyTown.Game
                         Id: 8cdfd3fd-4e3f-4168-952a-31b17b3fe510
-                        JumpForce: 10.0
-                        MaxVelocityX: 20.0
-                        MoveSpeed: 10.0
+                        Curve: !ComputeAnimationCurveFloat
+                            KeyFrames:
+                                bd244ff1793311a0ef3837391562da22:
+                                    Key: 0.0
+                                    Value: 0.5196556
+                                    TangentType: Linear
+                                40a9fd4e00eff9abd396eb523c091061:
+                                    Key: 0.10158916
+                                    Value: 0.26098952
+                                    TangentType: Linear
+                                b21650ee33ea607800944188142ec3ff:
+                                    Key: 0.28280273
+                                    Value: 0.13764152
+                                    TangentType: Linear
+                                a0da2f93b6a7335643e8c10a5e597781:
+                                    Key: 0.60632133
+                                    Value: 0.17869785
+                                    TangentType: Linear
+                                ba6b35b63dfb089f62810a8b9eebf480:
+                                    Key: 0.82545817
+                                    Value: 0.5087637
+                                    TangentType: Linear
+                                e2d2341a88ef4fcddf24a3c372216e11:
+                                    Key: 1.0
+                                    Value: 1.0
+                                    TangentType: Linear
+                        MaxVelocityX: 10.0
+                        MoveSpeed: 20.0
+                        Direction: Right
                     c519fd3bc479393cc6f4034aaed45421: !PaddyTown.Player.AnimationController,PaddyTown.Game
                         Id: f2371a18-d7e5-480e-96af-7e6fc9e478e4
                         AnimationComponent: ref!! 9d9102e9-aba8-4d4f-9d95-0e8d2b2d7eee
@@ -744,7 +770,7 @@ Hierarchy:
                         AnimationJumpStart: 8557a96b-8277-4a2f-89ce-9bbe561a012d:Characters/Animations/JumpStart
                         AnimationJumpEnd: 7421e3c4-689a-4f6c-a5a7-301cfc073315:Characters/Animations/JumpEnd
                         AnimationJumpAir: ff6e17ff-ae84-4a87-87f8-c7b89a16de20:Characters/Animations/JumpAir
-                        WalkThreshold: 0.25
+                        WalkThreshold: 3.0
                         TimeFactor: 1.0
         -   Entity:
                 Id: 6751528e-a10a-421d-97a3-4864b4e4061a
